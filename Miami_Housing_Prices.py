@@ -4,28 +4,28 @@ import numpy as np
 import os
 def main():
     st.title("Miami Housing Price Prediction")
-    model_path = (os.path.join('miami_housing_price'),'model_joblib_gr')
-    model = joblib.load('miami_housing_price')
+model_path = (os.path.join('miami_housing_price'),'model_joblib_gr')
+model = joblib.load('miami_housing_price')
     
     # Example of using a relative path
-    model_path = os.path.join(os.path.dirname('miami_housing_price'), 'model_joblib_gr')
-    model = joblib.load('miami_housing_price')
+model_path = os.path.join(os.path.dirname('miami_housing_price'), 'model_joblib_gr')
+model = joblib.load('miami_housing_price')
     
-  latitude = st.number_input("Latitude")
-  longitude = st.number_input("Longitude")
-  lnd_sqfoot = st.number_input("Land Square Footage")
-  tot_lvg_area = st.number_input("Total Living Area")
-  spec_feat_val = st.number_input("Special Feature Value")
-  rail_dist = st.number_input("Distance to Rail")
-  ocean_dist = st.number_input("Distance to Ocean")
-  water_dist = st.number_input("Distance to Water")
-  cntr_dist = st.number_input("Distance to Center")
-  subcntr_di = st.number_input("Distance to Subcenter")
-  hwy_dist = st.number_input("Distance to Highway")
-  age = st.number_input("Age of House")
-  avno60plus = st.number_input("Number of Avenues over 60 feet wide")
-  month_sold = st.number_input("Month Sold")
-  structure_quality = st.number_input("Structure Quality")
+latitude = st.number_input("Latitude")
+longitude = st.number_input("Longitude")
+lnd_sqfoot = st.number_input("Land Square Footage")
+tot_lvg_area = st.number_input("Total Living Area")
+spec_feat_val = st.number_input("Special Feature Value")
+rail_dist = st.number_input("Distance to Rail")
+ocean_dist = st.number_input("Distance to Ocean")
+water_dist = st.number_input("Distance to Water")
+cntr_dist = st.number_input("Distance to Center")
+subcntr_di = st.number_input("Distance to Subcenter")
+hwy_dist = st.number_input("Distance to Highway")
+age = st.number_input("Age of House")
+avno60plus = st.number_input("Number of Avenues over 60 feet wide")
+month_sold = st.number_input("Month Sold")
+tructure_quality = st.number_input("Structure Quality")
   
   # Create a dataframe from the input values
   input_data = pd.DataFrame({
