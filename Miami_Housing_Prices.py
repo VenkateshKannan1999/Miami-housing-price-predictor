@@ -22,7 +22,7 @@ def main():
     age = st.number_input("Age of House")
     avno60plus = st.number_input("Number of Avenues over 60 feet wide")
     month_sold = st.number_input("Month Sold")
-    tructure_quality = st.number_input("Structure Quality")
+    structure_quality = st.number_input("Structure Quality")
   
   # Create a dataframe from the input values
     input_data = pd.DataFrame({
