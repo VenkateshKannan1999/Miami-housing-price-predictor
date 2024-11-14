@@ -2,8 +2,8 @@ import streamlit as st
 import joblib
 import numpy as np
 import os
-model_path = (os.path.join('miami_housing_price'),'model_joblib_gr')
-model = joblib.load('miami_housing_price')# Example of using a relative path
+model_path = (os.path.join('miami_housing_price'),'miami_housing_price')
+model = joblib.load(model_path)# Example of using a relative path
 
 def main():
     st.title("Miami Housing Price Prediction") 
