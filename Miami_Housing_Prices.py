@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np
 import os
-model_path = (os.path.join('miami_housing_price'),'miami_housing_price')
+model_path = os.path.join(os.path.dirname(__file__),'miami_housing_price')
 model = joblib.load(model_path)# Example of using a relative path
 
 def main():
