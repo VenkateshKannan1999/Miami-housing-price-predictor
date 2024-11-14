@@ -28,7 +28,7 @@ month_sold = st.number_input("Month Sold")
 tructure_quality = st.number_input("Structure Quality")
   
   # Create a dataframe from the input values
-  input_data = pd.DataFrame({
+input_data = pd.DataFrame({
         'LATITUDE': [latitude],'LONGITUDE': [longitude], 
         'LND_SQFOOT': [lnd_sqfoot], 
         'TOT_LVG_AREA': [tot_lvg_area],
