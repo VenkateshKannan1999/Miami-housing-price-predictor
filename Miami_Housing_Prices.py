@@ -11,7 +11,7 @@ def main():
     model_path = os.path.join(os.path.dirname('miami_housing_price'), 'model_joblib_gr')
     model = joblib.load('miami_housing_price')
     
-   latitude = st.number_input("Latitude")
+  latitude = st.number_input("Latitude")
   longitude = st.number_input("Longitude")
   lnd_sqfoot = st.number_input("Land Square Footage")
   tot_lvg_area = st.number_input("Total Living Area")
