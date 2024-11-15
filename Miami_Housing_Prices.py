@@ -45,6 +45,6 @@ def main():
         with st.spinner('Calculating...'):  # Display a spinner while predicting
             prediction = model.predict(input_data)[0]
             st.success(f"Predicted Price: ${prediction:,.2f}")
-            st.ballons()  # Show balloons after prediction
+            st.ballon()  # Show balloons after prediction
 if __name__ == "__main__":
   main()
